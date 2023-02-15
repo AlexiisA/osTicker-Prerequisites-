@@ -22,7 +22,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-Enable Information Services (IIS)
+- Enable Information Services (IIS)
+- Create A Resource Group & Virtual Machine
 - Web Platform Installer
 - Install my SQL
 - Install C++ redistributable
