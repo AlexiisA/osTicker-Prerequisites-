@@ -39,22 +39,21 @@ Create a Resource Group
 <br />
 
 <p>
-<img src="https://i.imgur.io/lsArgQU_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet):
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.io/5Fis4yG_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.io/lsArgQU_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Connect to your Virtual Machine with Remote Desktop
+ <p>
+ Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet):
+<img src="https://i.imgur.io/5Fis4yG_d.webp?maxwidth=640&shape=thumb&fidelity=medium" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>Connect to your Virtual Machine with Remote Desktop
 <br />
 <p>
-<img src="https://i.imgur.io/3qWltwZ_d.webp?maxwidth=640&shape=thumb&fidelity=medium"height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.io/Kj8TsfY_d.webp?maxwidth=640&shape=thumb&fidelity=medium"height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
@@ -62,6 +61,9 @@ Connect to your Virtual Machine with Remote Desktop
 <p>
 <img src="https://i.imgur.io/F0d05iK_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+ Install / Enable IIS in Windows
+ </p>
 <p>
 Go to the search bar at the bottom and look up Control Panel.
 Click on "uninstall a program" under "Programs".
@@ -72,7 +74,7 @@ Press OK and it should start installing IIS & CGI.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.io/5Fis4yG_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.io/bzGoRLf_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Install Web Platform Installer
@@ -119,27 +121,48 @@ Download VC_redist.x86
 </p>
 <p>
 Click “Install Now!
-  </p>
+ Install osTicket v1.15.8</h3>
 <br />
-
 <p>
-<img src="https://i.imgur.io/lsArgQU_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Download osTicket (download from within lab files: link).
 </p>
 <p>
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet)
+	Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
+ <p>
+	Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
+	
+</p>
+	<img src="https://i.imgur.io/TiyrO0L_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="75%" width="100%" alt="PHP Manager"/>
+ </p>
+<p>
+Reload IIS (Open IIS, Stop and Start the server)
+ </p>
+<p>
+Go to sites -> Default -> osTicket:
+	<img src="https://i.imgur.io/iDUGdSF_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="75%" width="100%" alt="PHP Manager"/>
+<p>
   </p>
 <br />
-
+On the right, click “Browse *:80”:
 <p>
-<img src="https://i.imgur.io/lsArgQU_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.io/3MjNnA8_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet):
-  </p>
-<br />
-
+Enable Extensions in IIS: Note that some extensions are not enabled
+ </p>
 <p>
-<img src="https://i.imgur.io/lsArgQU_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Go back to IIS, sites -> Default -> osTicket.
+
+Double-click PHP Manager:
+<p>
+<img src="https://i.imgur.io/DlWrpWo_d.webp?maxwidth=640&shape=thumb&fidelity=medium" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet):
+Refresh the osTicket site in your browser, observe the changes
+ 
+ </p>
+<p>
+
+
+
+  
